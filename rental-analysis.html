@@ -99,7 +99,7 @@ a{color:#0B6E82}a:hover{color:#08515F}
 <input type="hidden" name="form-name" value="free-rental-analysis">
 <p hidden><label>Leave blank<input name="website"></label></p>
 <p class="grp">The property</p>
-<label class="fld" style="grid-column: 1 / -1">Property address<input type="text" name="address" autocomplete="street-address"></label>
+<label class="fld" style="grid-column: 1 / -1">Property address<input type="text" required name="address" autocomplete="street-address"></label>
 <label class="fld">City<input type="text" name="city" value="Wichita"></label>
 <label class="fld">ZIP<input type="text" name="zip" inputmode="numeric" autocomplete="postal-code"></label>
 <label class="fld">Property type<select name="type"><option>Single-family home</option><option>Duplex</option><option>Triplex / fourplex</option><option>Townhome / condo</option></select></label>
@@ -108,9 +108,9 @@ a{color:#0B6E82}a:hover{color:#08515F}
 <label class="fld">Square feet (optional)<input type="text" name="sqft" inputmode="numeric"></label>
 <label class="fld" style="grid-column: 1 / -1">Current status<select name="status"><option>Vacant</option><option>Occupied, lease ending soon</option><option>Owner-occupied, planning to rent</option><option>Currently self-managing</option></select></label>
 <p class="grp">About you</p>
-<label class="fld" style="grid-column: 1 / -1">Full name<input type="text" name="name" autocomplete="name"></label>
-<label class="fld">Email<input type="email" name="email" autocomplete="email"></label>
-<label class="fld">Phone<input type="tel" name="phone" autocomplete="tel"></label>
+<label class="fld" style="grid-column: 1 / -1">Full name<input type="text" required name="name" autocomplete="name"></label>
+<label class="fld">Email<input type="email" required name="email" autocomplete="email"></label>
+<label class="fld">Phone<input type="tel" required name="phone" autocomplete="tel"></label>
 <div style="grid-column: 1 / -1; display: flex; justify-content: flex-end; padding-top: 4px"><button class="btn" type="submit" style="min-height: 52px; padding: 0 28px; font-size: 16px">Get my free analysis</button></div>
 </form>
 </div>

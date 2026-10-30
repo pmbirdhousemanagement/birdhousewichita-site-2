@@ -140,11 +140,11 @@ a{color:#0B6E82}a:hover{color:#08515F}
 <form name="pricing" method="post" action="/thanks.html" data-netlify="true" netlify-honeypot="website" style="flex: 1 1 520px; min-width: 0; box-sizing: border-box; background: #ffffff; border: 1px solid #E2E8F0; border-radius: 24px; padding: 36px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px">
 <input type="hidden" name="form-name" value="pricing">
 <p hidden><label>Leave blank<input name="website"></label></p>
-<label class="fld">Full name<input type="text" name="name" autocomplete="name"></label>
-<label class="fld">Email<input type="email" name="email" autocomplete="email"></label>
-<label class="fld">Phone<input type="tel" name="phone" autocomplete="tel"></label>
+<label class="fld">Full name<input type="text" required name="name" autocomplete="name"></label>
+<label class="fld">Email<input type="email" required name="email" autocomplete="email"></label>
+<label class="fld">Phone<input type="tel" required name="phone" autocomplete="tel"></label>
 <label class="fld">Number of units<select name="units"><option>1</option><option>2</option><option>3</option><option>4</option><option>5 or more</option></select></label>
-<label class="fld" style="grid-column: 1 / -1">Property address<input type="text" name="address" autocomplete="street-address"></label>
+<label class="fld" style="grid-column: 1 / -1">Property address<input type="text" required name="address" autocomplete="street-address"></label>
 <label class="fld" style="grid-column: 1 / -1">Service you're interested in<select name="service"><option>Full management</option><option>Leasing only</option><option>Not sure yet</option></select></label>
 <label class="fld" style="grid-column: 1 / -1">Anything else we should know?<textarea name="message"></textarea></label>
 <div style="grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap"><span style="font-size: 13px; color: #64748B">We never share your information.</span><button class="btn" type="submit">Request my quote</button></div>
