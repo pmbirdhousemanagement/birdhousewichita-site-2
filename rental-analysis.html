@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Birdhouse Property Management — Free Rental Analysis</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:'Inter',system-ui,-apple-system,sans-serif;color:#0F172A;background:#ffffff;-webkit-font-smoothing:antialiased}
+a{color:#0B6E82}a:hover{color:#08515F}
+.nl{display:inline-flex;align-items:center;gap:4px;min-height:44px;padding:0 12px;box-sizing:border-box;border-radius:10px;font-size:15px;color:#334155;text-decoration:none}
+.nl:hover{color:#0F172A;background:#F1F7F9}
+.dd{position:relative}
+.ddm{display:none;position:absolute;top:100%;left:0;min-width:230px;padding:8px;background:#ffffff;border:1px solid #E2E8F0;border-radius:14px;box-shadow:0 16px 40px rgba(15,31,42,0.10);z-index:20}
+.dd:hover .ddm,.dd:focus-within .ddm{display:block}
+.ddm a{display:flex;align-items:center;min-height:40px;padding:0 12px;border-radius:8px;font-size:14px;color:#334155;text-decoration:none}
+.ddm a:hover{background:#F1F7F9;color:#0F172A}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 22px;box-sizing:border-box;border:1px solid #0B6E82;border-radius:999px;background:#0B6E82;color:#ffffff;font:inherit;font-size:15px;font-weight:500;text-decoration:none;cursor:pointer}
+.btn:hover{background:#08515F;border-color:#08515F;color:#ffffff}
+.fld{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:500;color:#334155}
+.fld input,.fld select,.fld textarea{width:100%;box-sizing:border-box;min-height:46px;padding:10px 14px;border:1px solid #CBD5E1;border-radius:12px;background:#ffffff;font:inherit;font-size:15px;font-weight:400;color:#0F172A}
+.fld input:focus,.fld select:focus,.fld textarea:focus{outline:2px solid #36B5C9;outline-offset:1px;border-color:#36B5C9}
+.grp{margin:0;font-size:13px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:#0B6E82;grid-column:1 / -1;padding-top:8px}
+.fl{display:inline-block;padding:5px 0;font-size:14px;color:#CBD5E1;text-decoration:none}
+.fl:hover{color:#ffffff}
+</style>
+<style>img,svg{max-width:100%} html{scroll-behavior:smooth} @media (max-width:720px){ .ddm{position:static;box-shadow:none;border:0;padding:0 0 0 12px} }</style>
+</head>
+<body>
+<div style="width: 100%; background: #ffffff">
+
+<header style="background: #ffffff; border-bottom: 1px solid #E6EDF0; position: relative; z-index: 5">
+<div style="max-width: 1200px; margin: 0 auto; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap">
+<a href="index.html" style="display: flex; align-items: center; gap: 10px; min-height: 44px; text-decoration: none; color: #0F172A">
+<svg width="36" height="36" viewBox="0 0 48 48" fill="none" stroke="#1A9AB0" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><g transform="scale(0.05714) translate(-156 -368)" fill="#1A9AB0" stroke="none"><path d="M577 466L985 754V898C900 812 760 712 577 578C394 712 254 815 168 903V754Z"></path><path d="M275 886C330 905 380 920 405 922C470 916 540 890 575 840C590 815 610 745 683 747C725 748 752 770 766 800C785 803 802 809 818 818C800 826 783 834 768 843C758 860 755 885 757 910C762 1020 680 1110 565 1108C480 1107 410 1060 376 1012L386 1000C330 985 280 930 275 886Z"></path></g></svg>
+<span style="display: flex; flex-direction: column; line-height: 1.15"><span style="font-size: 19px; font-weight: 500; letter-spacing: -0.01em">Birdhouse</span><span style="font-size: 10.5px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: #0B6E82">Property Management</span></span>
+</a>
+<nav aria-label="Main" style="display: flex; align-items: center; gap: 2px; flex-wrap: wrap">
+<a class="nl" href="pricing.html">Pricing</a>
+<a class="nl" href="about.html">About Us</a>
+<div class="dd">
+<a class="nl" href="owners.html" style="color: #0F172A; font-weight: 500">Owners Hub <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 4.5l3 3 3-3"></path></svg></a>
+<div class="ddm">
+<a href="owners.html">Services overview</a>
+<a href="rental-analysis.html" aria-current="page">Free rental analysis</a>
+<a href="https://birdhousemanagement.appfolio.com/oportal/users/log_in" target="_blank" rel="noopener">Owner portal login ↗</a>
+</div>
+</div>
+<div class="dd">
+<a class="nl" href="residents.html">Residents Hub <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 4.5l3 3 3-3"></path></svg></a>
+<div class="ddm">
+<a href="rentals.html">Available rentals</a>
+<a href="https://birdhousemanagement.appfolio.com/connect/users/sign_in" target="_blank" rel="noopener">Pay rent online ↗</a>
+<a href="https://birdhousemanagement.appfolio.com/connect/users/sign_in" target="_blank" rel="noopener">Resident portal login ↗</a>
+</div>
+</div>
+<div class="dd">
+<a class="nl" href="vendors.html">Vendor Hub <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 4.5l3 3 3-3"></path></svg></a>
+<div class="ddm">
+<a href="vendors.html#join">Join our vendor network</a>
+<a href="vendors.html#work">How we work with vendors</a>
+<a href="vendors.html#portal">Vendor portal</a>
+</div>
+</div>
+<a class="btn" href="contact.html" style="margin-left: 8px">Contact Us</a>
+</nav>
+</div>
+</header>
+
+<section style="background: #F4FAFB">
+<div style="max-width: 1200px; margin: 0 auto; padding: 88px 24px 112px; display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-start">
+<div style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+<p style="margin: 0; font-size: 13px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #0B6E82">Free rental analysis</p>
+<h1 style="margin: 0; font-size: clamp(2.5rem, 4.5vw, 3.5rem); line-height: 1.05; font-weight: 300; letter-spacing: -0.03em">What could your home rent for?</h1>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; font-weight: 300; color: #475569">Tell us about the property. A local manager will send a rent estimate based on current Wichita comparables.</p>
+<ul style="margin: 8px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; font-size: 15px; color: #334155">
+<li style="display: flex; gap: 10px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0B6E82" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l4 4 10-10"></path></svg>Suggested monthly rent range</li>
+<li style="display: flex; gap: 10px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0B6E82" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l4 4 10-10"></path></svg>Nearby comparable rentals</li>
+<li style="display: flex; gap: 10px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0B6E82" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l4 4 10-10"></path></svg>Prep tips to lease faster</li>
+<li style="display: flex; gap: 10px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0B6E82" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l4 4 10-10"></path></svg>No obligation, no spam</li>
+</ul>
+</div>
+<form name="free-rental-analysis" method="post" action="/thanks.html" data-netlify="true" netlify-honeypot="website" style="flex: 1 1 560px; min-width: 0; box-sizing: border-box; background: #ffffff; border: 1px solid #E2E8F0; border-radius: 24px; padding: 36px; display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 18px; box-shadow: 0 24px 60px rgba(15,31,42,0.06)">
+<input type="hidden" name="form-name" value="free-rental-analysis">
+<p hidden><label>Leave blank<input name="website"></label></p>
+<p class="grp">The property</p>
+<label class="fld" style="grid-column: 1 / -1">Property address<input type="text" name="address" autocomplete="street-address"></label>
+<label class="fld">City<input type="text" name="city" value="Wichita"></label>
+<label class="fld">ZIP<input type="text" name="zip" inputmode="numeric" autocomplete="postal-code"></label>
+<label class="fld">Property type<select name="type"><option>Single-family home</option><option>Duplex</option><option>Triplex / fourplex</option><option>Townhome / condo</option></select></label>
+<label class="fld">Bedrooms<select name="beds"><option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option></select></label>
+<label class="fld">Bathrooms<select name="baths"><option>1</option><option>1.5</option><option>2</option><option>2.5</option><option>3+</option></select></label>
+<label class="fld">Square feet (optional)<input type="text" name="sqft" inputmode="numeric"></label>
+<label class="fld" style="grid-column: 1 / -1">Current status<select name="status"><option>Vacant</option><option>Occupied, lease ending soon</option><option>Owner-occupied, planning to rent</option><option>Currently self-managing</option></select></label>
+<p class="grp">About you</p>
+<label class="fld" style="grid-column: 1 / -1">Full name<input type="text" name="name" autocomplete="name"></label>
+<label class="fld">Email<input type="email" name="email" autocomplete="email"></label>
+<label class="fld">Phone<input type="tel" name="phone" autocomplete="tel"></label>
+<div style="grid-column: 1 / -1; display: flex; justify-content: flex-end; padding-top: 4px"><button class="btn" type="submit" style="min-height: 52px; padding: 0 28px; font-size: 16px">Get my free analysis</button></div>
+</form>
+</div>
+</section>
+
+<footer style="background: #0F1F2A; color: #CBD5E1">
+<div style="max-width: 1200px; margin: 0 auto; padding: 64px 24px 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; align-items: center; gap: 10px"><svg width="32" height="32" viewBox="0 0 48 48" fill="none" stroke="#7FD3DF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><g transform="scale(0.05714) translate(-156 -368)" fill="#7FD3DF" stroke="none"><path d="M577 466L985 754V898C900 812 760 712 577 578C394 712 254 815 168 903V754Z"></path><path d="M275 886C330 905 380 920 405 922C470 916 540 890 575 840C590 815 610 745 683 747C725 748 752 770 766 800C785 803 802 809 818 818C800 826 783 834 768 843C758 860 755 885 757 910C762 1020 680 1110 565 1108C480 1107 410 1060 376 1012L386 1000C330 985 280 930 275 886Z"></path></g></svg><span style="display: flex; flex-direction: column; line-height: 1.15"><span style="font-size: 18px; font-weight: 500; color: #ffffff">Birdhouse</span><span style="font-size: 10px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: #9BE0EA">Property Management</span></span></div>
+<p style="margin: 0; font-size: 14px; line-height: 1.6; color: #AAB8C5">Locally owned residential property management in Wichita, Kansas.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #7FD3DF; padding-bottom: 8px">Owners</span><a class="fl" href="owners.html">Services</a><a class="fl" href="pricing.html">Pricing</a><a class="fl" href="rental-analysis.html">Free rental analysis</a><a class="fl" href="https://birdhousemanagement.appfolio.com/oportal/users/log_in" target="_blank" rel="noopener">Owner portal ↗</a></div>
+<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #7FD3DF; padding-bottom: 8px">Residents</span><a class="fl" href="rentals.html">Available rentals</a><a class="fl" href="https://birdhousemanagement.appfolio.com/connect/users/sign_in" target="_blank" rel="noopener">Pay rent online ↗</a><a class="fl" href="https://birdhousemanagement.appfolio.com/connect/users/sign_in" target="_blank" rel="noopener">Resident portal ↗</a><a class="fl" href="residents.html">Residents Hub</a></div>
+<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #7FD3DF; padding-bottom: 8px">Contact</span><a class="fl" href="tel:+13162472260">316-247-2260</a><a class="fl" href="mailto:contact@birdhouse-management.com">contact@birdhouse-management.com</a><span style="font-size: 14px; padding: 5px 0; color: #CBD5E1">2222 N Longwood Ct, Wichita, KS</span><a class="fl" href="vendors.html">Vendor Hub</a><a class="fl" href="about.html">About us</a></div>
+</div>
+<div style="max-width: 1200px; margin: 0 auto; padding: 24px; border-top: 1px solid #1F3542; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 13px; color: #94A3B8">
+<span>© 2026 Birdhouse Property Management LLC</span>
+<span>Equal Housing Opportunity</span>
+</div>
+</footer>
+
+</div>
+
+</body>
+</html>
