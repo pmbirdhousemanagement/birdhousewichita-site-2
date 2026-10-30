@@ -26,6 +26,7 @@ a{color:#0B6E82}a:hover{color:#08515F}
 .fl:hover{color:#ffffff}
 </style>
 <style>img,svg{max-width:100%} html{scroll-behavior:smooth} @media (max-width:720px){ .ddm{position:static;box-shadow:none;border:0;padding:0 0 0 12px} }</style>
+<style>.mt{display:none}@media (max-width:800px){.mt{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;padding:0;border:1px solid #E2E8F0;border-radius:10px;background:#ffffff;color:#0F172A;cursor:pointer}#site-nav{display:none !important;width:100%;flex-direction:column;align-items:stretch !important;gap:0 !important;padding:8px 0 4px}header.open #site-nav{display:flex !important}#site-nav .nl{justify-content:flex-start}#site-nav .nl svg{display:none}#site-nav .ddm{display:block;position:static;min-width:0;box-shadow:none;border:0;padding:0 0 4px 16px}#site-nav .btn{margin:8px 0 0 !important;width:100%}}</style>
 </head>
 <body>
 <div style="width: 100%; background: #ffffff">
@@ -36,7 +37,8 @@ a{color:#0B6E82}a:hover{color:#08515F}
 <svg width="36" height="36" viewBox="0 0 48 48" fill="none" stroke="#1A9AB0" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><g transform="scale(0.05714) translate(-156 -368)" fill="#1A9AB0" stroke="none"><path d="M577 466L985 754V898C900 812 760 712 577 578C394 712 254 815 168 903V754Z"></path><path d="M275 886C330 905 380 920 405 922C470 916 540 890 575 840C590 815 610 745 683 747C725 748 752 770 766 800C785 803 802 809 818 818C800 826 783 834 768 843C758 860 755 885 757 910C762 1020 680 1110 565 1108C480 1107 410 1060 376 1012L386 1000C330 985 280 930 275 886Z"></path></g></svg>
 <span style="display: flex; flex-direction: column; line-height: 1.15"><span style="font-size: 19px; font-weight: 500; letter-spacing: -0.01em">Birdhouse</span><span style="font-size: 10.5px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: #0B6E82">Property Management</span></span>
 </a>
-<nav aria-label="Main" style="display: flex; align-items: center; gap: 2px; flex-wrap: wrap">
+<button class="mt" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
+<nav id="site-nav" aria-label="Main" style="display: flex; align-items: center; gap: 2px; flex-wrap: wrap">
 <a class="nl" href="pricing.html">Pricing</a>
 <a class="nl" href="about.html">About Us</a>
 <div class="dd">
@@ -67,6 +69,7 @@ a{color:#0B6E82}a:hover{color:#08515F}
 </nav>
 </div>
 </header>
+<script>(function(){var h=document.querySelector('header'),b=h&&h.querySelector('.mt');if(!b)return;b.addEventListener('click',function(){var o=h.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');b.setAttribute('aria-label',o?'Close menu':'Menu');});})();</script>
 
 <section style="background: #F4FAFB">
 <div style="max-width: 1200px; margin: 0 auto; padding: 88px 24px 112px; display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-start">
