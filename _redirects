@@ -1,0 +1,5 @@
+# Old URLs from the first version of the site
+/owner-portal          https://birdhousemanagement.appfolio.com/oportal/users/log_in   302
+/resident-portal       https://birdhousemanagement.appfolio.com/connect/users/sign_in  302
+/application-criteria  /residents#faq                                                   301
+/services              /owners                                                          301
